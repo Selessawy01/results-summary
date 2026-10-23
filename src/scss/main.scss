@@ -1,0 +1,17 @@
+@use "./abstract/variables" as v;
+@use "./abstract/breakpoint" as b;
+
+@use "./base/reset";
+@use "./base/typography";
+
+@use "./section/result";
+@use "./section/summary";
+
+main {
+ @media (min-width:b.$bp-md) {
+    background  : v.$blue-50;
+    min-height  : 100vh;
+    display     : grid;
+    place-items : center;
+   }
+}

@@ -1,0 +1,95 @@
+@use "../abstract/variables" as v; 
+@use "../abstract/breakpoint" as b;
+
+
+.summary {
+    padding        : v.$spacing-300 v.$spacing-400;
+    display        : flex;
+    flex-direction : column;
+    gap            : v.$spacing-300;
+    background     : v.$white;
+    
+    @media(min-width: b.$bp-md){
+    gap           : v.$spacing-400;
+    padding       : v.$spacing-600 v.$spacing-500;
+    border-radius : 1.5625rem 1.5625rem 0 0;
+    }
+}
+
+.summary__title {
+    color : v.$secondary-txt-clr;
+}
+
+.summary__content {
+    list-style      : none;
+    display         : flex;
+    flex-direction  : column;
+    gap             : v.$spacing-200;
+}
+
+.summary__item {
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : space-between;
+    padding         : v.$spacing-200;
+    border-radius   : 0.75rem;
+}
+
+.summary__label {
+    display         : flex;
+    flex-direction  : row;
+    gap             : v.$spacing-200;
+    align-items     : center;
+    justify-content : center;
+}
+.summary__icon-name {
+    font-weight     : v.$fw-medium;
+}
+.summary__item--reaction {
+    background-color : v.$red-50 ;
+    color            : v.$red-400;
+}
+
+.summary__item--memory{
+    background-color : v.$yellow-50 ;
+    color            : v.$yellow-400;
+}
+.summary__item--verbal {
+    background-color : v.$green-50 ;
+    color            : v.$green-500;
+}
+.summary__item--visual {
+    background-color : v.$blue-50 ;
+    color            : v.$blue-800;
+}
+
+.summary__score {
+    font-size      : v.$fs-100;
+    font-weight    : v.$fw-bold;
+    line-height    : 130%;
+    color          : v.$secondary-txt-clr;
+}
+.summary__total-score {
+    color          : color-mix(in srgb, v.$secondary-txt-clr 50%, transparent);
+}
+
+.summary__btn {
+    padding-block  : v.$spacing-200;
+    background     : v.$navy-950;
+    color          : v.$white;
+    border-radius  : 8rem;
+    border         : none;
+    font-size      : v.$fs-200;
+    font-weight    : v.$fw-bold;
+    line-height    : 130%;
+}
+
+.summary__btn:hover {
+    background: v.$gradient-result;
+}
+
+.summary__btn:focus-visible {
+  outline        : 3px solid v.$navy-950;
+  outline-offset : 4px;
+}

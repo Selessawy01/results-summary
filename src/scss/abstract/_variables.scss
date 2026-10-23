@@ -1,0 +1,62 @@
+// COLORS
+$white    : #FFFFFF;
+$black    : #000000;
+
+$navy-950   : #303B59;
+$navy-200   : #CAC9FF;
+$navy-50    : #ECF2FF;
+
+$blue-800   : #1125D6;
+$blue-50    : #F3F4FD;
+
+$yellow-400 : #FFB21E;
+$yellow-50  : #FFFBF4;
+
+$red-400    : #FF5555;
+$red-50     : #FFF6F6;
+
+$green-500  : #00BB8F;
+$green-50   : #F2FCF9;
+
+$gradient-score  : linear-gradient(to bottom, #4d21c9 0%, #2521c9 50% , #2521e1 100%);
+$gradient-result : linear-gradient(to bottom, #7755FF 0%,#2F2CE9 100%);
+
+$result-bg-cl : $gradient-result;
+
+
+
+// SPACING
+$spacing-0    : 0px;
+$spacing-100  : 0.5rem;     // 8px
+$spacing-200  : 1rem;       // 16px
+$spacing-300  : 1.5rem;     // 24px
+$spacing-400  : 2rem;       // 32px
+$spacing-500  : 2.5rem;     // 40px
+$spacing-600  : 3rem;       // 48px
+$spacing-700  : 3.5rem;     // 56px
+$spacing-900  : 4.5rem;     // 72px
+$spacing-1000 : 5rem;       // 80px
+
+
+// TYPOGRAPHY
+$ff-hanken       :  "Hanken Grotesk", sans-serif;
+
+// Typography — font sizes
+$fs-100  : 1rem;       // 16px 
+$fs-200  : 1.125rem;   // 18px  
+$fs-300  : 1.5rem;     // 24px 
+$fs-400  : 2rem;       // 32px 
+$fs-500  : 3.5rem ;    // 56px
+$fs-600  : 4.5rem  ;   // 72px
+
+//font weight
+$fw-medium    : 500;
+$fw-bold      : 700;
+$fw-extraBold : 800;
+
+
+$primary-txt-clr   : $navy-200;
+$secondary-txt-clr : $navy-950;
+$text-emphasis     : $white;
+
+$border-radius     : 1.5625rem;

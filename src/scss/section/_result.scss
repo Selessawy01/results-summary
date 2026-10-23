@@ -1,0 +1,88 @@
+@use "../abstract/variables" as v; 
+@use "../abstract/breakpoint" as b;
+
+
+.results {
+    width                     : 100%;
+    
+    @media(min-width:b.$bp-md){
+
+        width                 : 42.875rem;
+        height                : 32rem;
+        
+        display               : grid;
+        grid-template-columns : 1fr  1fr;
+        align-items           : center;
+        margin-inline         : auto;
+        
+        background            : v.$white;
+        border-radius         : v.$border-radius;
+    }
+
+    @media(min-width:b.$bp-xl){
+        width                : 46rem;
+    }
+}
+
+
+.result{
+   background     : v.$gradient-result;
+   padding        : clamp(v.$spacing-400,6.5vw,v.$spacing-600) clamp( v.$spacing-700,10vw, v.$spacing-900); 
+   border-radius  : 0 0 v.$border-radius v.$border-radius;
+
+   @media (min-width:b.$bp-md){
+    border-radius : v.$border-radius; 
+   }
+
+   @media (min-width:b.$bp-xl){
+    padding-inline : v.$spacing-700 ;
+   }
+}
+.result__content{
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    gap             : v.$spacing-300;
+    text-align      : center;
+
+    @media(min-width : b.$bp-md){
+    gap              : v.$spacing-400;
+    }
+}
+
+.result__title {
+    color          : v.$primary-txt-clr;
+}
+.result__score{
+    width           : 8.75rem;
+    height          : 8.75rem;
+    border-radius   : 50%;
+    background      : v.$gradient-score ;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    color           : v.$text-emphasis;
+
+    @media(min-width: b.$bp-md){
+    width          : 12.5rem;
+    height         : 12.5rem;
+    }
+}
+
+.result__total-score{
+    color       : v.$primary-txt-clr;
+    font-weight : v.$fw-bold;
+    display     : block;
+    
+}
+
+.result__feedback-title {
+    color             : v.$text-emphasis;
+    padding-block-end : v.$spacing-200;
+}
+.result__feedback-description{
+    color            : v.$primary-txt-clr;
+    font-weight      : v.$fw-medium;
+}

@@ -1,0 +1,28 @@
+@use "../abstract/variables" as v;
+
+.xl-text {
+    font-size      : clamp(v.$fs-500,12vw,v.$fs-600);
+    font-weight    : v.$fw-extraBold;
+    line-height    : 100%;
+    letter-spacing : 0px;
+}
+
+.lg-text {
+    font-size      : clamp(v.$fs-300,6vw,v.$fs-400);
+    font-weight    : v.$fw-bold;
+    line-height    : 130%;
+    letter-spacing : 0px;
+}
+
+.md-text {
+    font-size      : clamp(v.$fs-200,3.5vw,v.$fs-300);
+    font-weight    : v.$fw-bold;
+    line-height    : 130%;
+    letter-spacing : 0px;
+}
+
+.sm-text {
+    font-size      : clamp(v.$fs-100,3.5vw,v.$fs-200);
+    line-height    : 130%;
+    letter-spacing : 0px;
+}
