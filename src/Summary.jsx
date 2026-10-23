@@ -1,4 +1,4 @@
- import summaryData from './data/data.json'
+ import summaryData from './Data/data.json'
  
 
 import reactionIcon from './assets/images/icon-reaction.svg'
